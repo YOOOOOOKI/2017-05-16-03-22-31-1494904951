@@ -16,7 +16,7 @@ module.exports = function main(num) {
 	var arr9=[["._."],["|_|"],["..|"]];
 	var arr=[arr0,arr1,arr2,arr3,arr4,arr5,arr6,arr7,arr8,arr9];
 
-
+	var strr="";
 	var oldnum=[];
 	var realnum=parseInt(num);
 	while(realnum!==0)
@@ -29,15 +29,15 @@ module.exports = function main(num) {
 	for (var k = 0; k< 3; k++) {
 	for (var i = oldnum.length-1; i>=0; i--) {
 		if(i===0)
-		{console.log(arr[(oldnum[i])][k]);
+		{strr=strr+(arr[(oldnum[i])][k]);
 		}
 		else{
-			console.log(arr[(oldnum[i])][k]+" ");
+			strr=strr+(arr[(oldnum[i])][k]+" ");
 		}
 	}
-	console.log("<br>");
+	strr=strr+("<br>");
 	}
 	
-
+return strr;
  
 };
