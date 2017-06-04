@@ -35,7 +35,7 @@ module.exports = function main(num) {
 			strr=strr+(arr[(oldnum[i])][k]+" ");
 		}
 	}
-	strr=strr+("<br>");
+	strr=strr+("\n");
 	}
 	
 return strr;
